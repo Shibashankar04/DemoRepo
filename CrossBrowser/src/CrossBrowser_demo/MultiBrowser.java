@@ -28,6 +28,7 @@ public class MultiBrowser {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\pc\\Downloads\\Compressed\\chromedriver_2.44.exe");
 		
 		driver=new ChromeDriver();
+		
 	
 		}
 		
