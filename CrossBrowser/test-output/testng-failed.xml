@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="chromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="CrossBrowser_demo.MultiBrowser">
+        <methods>
+          <include name="Firefoxtest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- CrossBrowser_demo.MultiBrowser -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test thread-count="5" name="ieTest(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="CrossBrowser_demo.MultiBrowser">
+        <methods>
+          <include name="Firefoxtest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- CrossBrowser_demo.MultiBrowser -->
+    </classes>
+  </test> <!-- ieTest(failed) -->
+  <test thread-count="5" name="firefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="CrossBrowser_demo.MultiBrowser">
+        <methods>
+          <include name="Firefoxtest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- CrossBrowser_demo.MultiBrowser -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
